@@ -36,5 +36,7 @@ public class Main {
 
         System.out.println(produto.marca + " " + produto.fabricante + " " + produto.cod_barras + " " + produto.preco);
 
+        //
+
     }
 }
