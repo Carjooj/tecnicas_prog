@@ -35,7 +35,6 @@ public class Main {
         Produto produto = new Produto(strmarca, strfabricante, strcod_barras, ftpreco);
 
         System.out.println(produto.marca + " " + produto.fabricante + " " + produto.cod_barras + " " + produto.preco);
-
         //
 
     }
