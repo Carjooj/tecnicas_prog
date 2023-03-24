@@ -30,11 +30,11 @@ public class Calculo {
         double icms = fatorIcms * forncecimento;
         double cofins = fatorCofins * forncecimento;
         double pisPaesesp = fatorPis * forncecimento;
-        double icms_pis = (forncecimento) * (icms * pisPaesesp);
-        double icms_cofins = (forncecimento) * (icms * cofins);
+        double icms_pis = forncecimento * fatorIcms * fatorPis;
+        double icms_cofins = forncecimento * fatorIcms * fatorCofins;
         double fatura = (forncecimento + icms + cofins + pisPaesesp + icms_cofins + icms_pis);
 
-        return  "Consumo: " + forncecimento +
+        return  "Fornecimento: " + forncecimento +
                 "\nFator ICMS: " + fatorIcms +
                 "\nFator COFINS: " + fatorCofins +
                 "\nFator PIS/PASESP: " + fatorPis +
